@@ -18,7 +18,61 @@ body, html{
 	src: url(../fonts/BlackAsylum.ttf);
 
 }
-.pimg1, .pimg2, .pimg3{
+
+.cover-section-1{
+	width: 100%;
+	min-height: 500px;
+	background-color: red;
+}
+
+.cover-image{
+	position:relative;
+  	opacity:0.85;
+  	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
+  	
+}
+
+.image-1{
+
+	background-image:url('../img/cover-image-1.png');
+  	min-height:100%;
+
+}
+
+.image-2{
+
+	background-image:url('../img/Midnight-Graveyard-Silhouette.png');
+  	min-height:100%;
+
+}
+
+.dark-div{
+	width: 80%;
+	background-color: transparent;
+	position: fixed;
+	/*opacity: .85;*/
+	text-align: center;
+	margin: auto auto;
+
+}
+
+.header-div{
+	font-size: 2em;
+	font-family: blackasylum;
+	text-shadow: 3px 3px 3px orange;
+	color: red;
+}
+@media(max-width:568px){
+  .cover-image{
+    background-attachment:scroll;
+  }
+}
+
+/*======================FOR PARALLAX===============================*/
+.pimg1, .pimg2, .pimg3,.pimg4,.pimg5{
   position:relative;
   opacity:0.85;
   background-position:center;
@@ -38,13 +92,27 @@ body, html{
 }
 
 .pimg2{
-  background-image:url('../img/backlit-black-candle-619420.jpg');
+  background-image:url('../img/evil2.gif');
   min-height:400px;
 }
 
 .pimg3{
-  background-image:url('../img/arrangement-blackboard-candle-1449058.jpg');
-  min-height:400px;
+  background-image:url('../img/1.jpg');
+  min-height:700px;
+}
+.pimg4{
+  background-image:url('../img/giphy3.gif');
+  min-height:700px;
+}
+.pimg5{
+  background-image:url('../img/3.jpg');
+  min-height:700px;
+}
+.cloumn
+{
+   float: left;
+    width: 20%;
+    padding: 5px;
 }
 
 .section{
@@ -87,7 +155,10 @@ body, html{
 }
 
 @media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+  .pimg1, .pimg2, .pimg3,.pimg4,.pimg5{
     background-attachment:scroll;
   }
 }
+
+
+/*======================FOR PARALLAX END===============================*/
